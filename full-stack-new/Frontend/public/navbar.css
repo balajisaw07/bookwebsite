@@ -1,0 +1,139 @@
+/* Container */
+.navbar-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: white;
+  }
+  
+  .navbar-container.dark {
+    background-color: #2d3748; /* dark mode background */
+    color: white;
+  }
+  
+  .sticky-navbar {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 3rem;
+    z-index: 1;
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 0.25rem;
+    width: 13rem;
+  }
+  
+  .dropdown-content.dark {
+    background-color: #1a202c; /* dark mode background */
+  }
+  
+  /* Menu */
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-horizontal {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem 1rem;
+  }
+  
+  .menu a:hover {
+    background-color: #f1f5f9;
+  }
+  
+  .menu a.dark:hover {
+    background-color: #2d3748;
+  }
+  
+  /* Search Box */
+  .search-box {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.25rem;
+  }
+  
+  .search-box input {
+    flex-grow: 1;
+    outline: none;
+    border: none;
+    padding: 0 0.5rem;
+  }
+  
+  .search-box input.dark {
+    background-color: #2d3748;
+    color: white;
+  }
+  
+  /* Theme Toggle */
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+  }
+  
+  .theme-toggle svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    cursor: pointer;
+  }
+  
+  /* Auth Button */
+  .auth-button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .auth-button:hover {
+    background-color: #2d3748;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark {
+    background-color: #1a202c;
+    color: white;
+  }
+  
+  input.dark {
+    background-color: #2d3748;
+    color: white;
+  }
+  
+  a.dark {
+    color: white;
+  }
+  

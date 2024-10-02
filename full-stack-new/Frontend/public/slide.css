@@ -1,0 +1,22 @@
+.slick-prev, .slick-next {
+    z-index: 1;
+    font-size: 20px;
+    color: black;
+    display: block !important;
+    opacity: 1;
+  }
+  
+  .slick-prev::before, .slick-next::before {
+    font-size: 20px;
+    color: black;
+    opacity: 1;
+  }
+  
+  .slick-prev {
+    left: -25px;
+  }
+  
+  .slick-next {
+    right: -25px;
+  }
+  
